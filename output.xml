@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.11.3 on darwin)" generated="2024-11-16T08:28:14.582489" rpa="false" schemaversion="5">
+<suite id="s1" name="File-Save" source="/Users/kasunmadusanka/Documents/CoderLab/file-save.robot">
+<test id="s1-t1" name="Extract Description and Save to File" line="16">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-16T08:28:14.677031" level="INFO">Opening browser 'Chrome' to base url 'https://www.australia.com/en'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-16T08:28:14.676862" elapsed="4.608573"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-16T08:28:22.289304" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-16T08:28:19.286227" elapsed="3.003651"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-16T08:28:22.294128" level="INFO">Clicking element 'xpath=//button[contains(text(),'Ok, I agree')]'.</msg>
+<arg>xpath=${POPUP_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-16T08:28:22.291005" elapsed="0.078285"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Page Loaded!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-16T08:28:22.369670" elapsed="0.000172"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-16T08:28:22.370155" level="INFO">Clicking element 'xpath=//body/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/nav[1]/div[2]/a[2]/img[1]'.</msg>
+<arg>xpath=${SEARCH_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-16T08:28:22.369956" elapsed="0.038758"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-16T08:28:25.409517" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-16T08:28:22.408870" elapsed="3.001185"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-16T08:28:25.412263" level="INFO">Clicking element 'xpath=//input[@id='dt-search-input-field-desktop']'.</msg>
+<arg>xpath=${SEARCH_TEXT_BOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-16T08:28:25.411099" elapsed="0.056042"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-16T08:28:25.467619" level="INFO">Typing text 'Queensland' into text field 'xpath=//input[@id='dt-search-input-field-desktop']'.</msg>
+<arg>xpath=${SEARCH_TEXT_BOX}</arg>
+<arg>Queensland</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-16T08:28:25.467371" elapsed="0.072190"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-16T08:28:26.542049" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-16T08:28:25.539710" elapsed="1.002491"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-16T08:28:26.542892" level="INFO">Clicking element 'xpath=//body/main[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]'.</msg>
+<arg>xpath=${DROP_DOWN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-16T08:28:26.542535" elapsed="3.818075"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Search Done!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-16T08:28:30.361704" elapsed="0.000463"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-16T08:28:33.363732" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-16T08:28:30.362277" elapsed="3.002035"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-11-16T08:28:33.367496" level="INFO">Executing JavaScript:
+window.scrollBy(0, 600)
+Without any arguments.</msg>
+<arg>window.scrollBy(0, 600)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-11-16T08:28:33.365571" elapsed="0.013658"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-16T08:28:34.380435" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-16T08:28:33.379855" elapsed="1.000718"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-16T08:28:34.381474" level="INFO">Clicking element 'xpath=//body/div[2]/main[1]/div[1]/div[4]/div[3]/div[2]/div[1]/div[1]/div[1]/div[3]/div[2]/a[2]/div[1]/div[2]/div[1]/div[1]/div[1]/p[1]'.</msg>
+<arg>xpath=${QUEENSLAND_TOPIC}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-16T08:28:34.380854" elapsed="2.235720"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-16T08:28:39.618704" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-16T08:28:36.617320" elapsed="3.001903"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-11-16T08:28:39.621282" level="INFO">Executing JavaScript:
+window.scrollBy(0, 600)
+Without any arguments.</msg>
+<arg>window.scrollBy(0, 600)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-11-16T08:28:39.619998" elapsed="0.011238"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-16T08:28:41.633238" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-16T08:28:39.631754" elapsed="2.001610"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-16T08:28:41.656070" level="INFO">${description} = Home to more than 1,000 ecosystem types and five World Heritage-listed sites, there’s something altogether magical about the beauty of Queensland. Here, islands of white sand dot aqua waters in the Wh...</msg>
+<var>${description}</var>
+<arg>xpath=${DESCRIPTION_PATH}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-16T08:28:41.633857" elapsed="0.022247"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Got the topic!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-16T08:28:41.656266" elapsed="0.000117"/>
+</kw>
+<kw name="Create File" owner="OperatingSystem">
+<msg time="2024-11-16T08:28:41.658092" level="INFO" html="true">Created file '&lt;a href="file:///Users/kasunmadusanka/Documents/CoderLab/Australia/Queensland.txt"&gt;/Users/kasunmadusanka/Documents/CoderLab/Australia/Queensland.txt&lt;/a&gt;'.</msg>
+<arg>${FOLDER_PATH}</arg>
+<arg>${description}</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<status status="PASS" start="2024-11-16T08:28:41.656454" elapsed="0.001673"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>File created at: ${FOLDER_PATH}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-16T08:28:41.658208" elapsed="0.000082"/>
+</kw>
+<doc>Extract the first description from the website and save it to a file.</doc>
+<status status="PASS" start="2024-11-16T08:28:14.676241" elapsed="26.982184"/>
+</test>
+<status status="PASS" start="2024-11-16T08:28:14.583070" elapsed="27.075809"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="File-Save">File-Save</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
